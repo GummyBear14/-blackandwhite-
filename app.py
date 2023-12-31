@@ -11,7 +11,7 @@ def on_connect(client, userdata, flags, rc):
 	topic = "topicName/pir"
 
 def on_message(client, userdata, msg):
-	Global detection
+	global detection
 	detection = msg.payload.decode('utf8')
 
 @app.route('/', methods=['GET'])
