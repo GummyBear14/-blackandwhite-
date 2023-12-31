@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<p>There is nobody in the room.</p>
+		<img id="Image5" width="98%" height="90%">
+
+		<script type="text/javascript">
+			window.setTimeout(function() {
+				window.location.reload();
+			}, 1000);
+
+			if (status == 0) {
+				image_5 = document.getElementById("Image5");
+				image_5.src = "IMAGES-5.png";
+			}
+
+			if (status == 1) {
+				image_4 = Image();
+				image_4.src = "IMAGES-4.png";
+				document.body.appendChild(image_4);
+			}
+		</script>
+	</body>
+</html>
